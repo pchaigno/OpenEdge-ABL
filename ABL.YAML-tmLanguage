@@ -21,7 +21,7 @@ patterns:
     end: \"(?!\")
     patterns:
       - name: constant.character.escape.abl
-        match: (~(x[0-9A-Fa-f]{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)|\"\")
+        match: (~(x[0-9A-Fa-f]{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)|\"\")
 
   - name: constant.numeric.source.abl
     match: (?<!\w)((0(x|X)[0-9a-fA-F]+)|([0-9]+(\.[0-9]+)?))
